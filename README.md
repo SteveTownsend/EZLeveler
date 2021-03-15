@@ -2,7 +2,7 @@
 Encounter Zone Scaler and Unleveler Synthesis Patcher for Skyrim SE
 
 # Configuration
-The patcher updates *MinLevel* and *MaxLevel* for every ECZN (Encounter Zone) record by scaling the *MinLevel* of the winning master. The patcher also normalizes the DisableCombatBoundary flag across all ECZNs.
+The patcher updates *MinLevel* and *MaxLevel* for every ECZN (Encounter Zone) record by scaling the *MinLevel* of the winning master. The patcher also normalizes the *DisableCombatBoundary* flag across all ECZNs.
 ```
 {
   "minLevelScaleFactor": 0.5,
