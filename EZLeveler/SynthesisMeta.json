@@ -1,8 +1,8 @@
 {
   "Nickname": "EZLeveler",
-  "Visibility": "Exclude",
-  "OneLineDescription": "",
-  "LongDescription": "",
+  "Visibility": "Visible",
+  "OneLineDescription": "Encounter Zone Scaler and Unleveler Synthesis Patcher for Skyrim SE",
+  "LongDescription": "Uses configuration settings to update ECZN.MinLevel and ECZN.MaxLevel by scaling MinLevel in winning master",
   "PreferredAutoVersioning": "Default",
   "RequiredMods": []
 }
