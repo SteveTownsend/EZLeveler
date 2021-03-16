@@ -20,7 +20,7 @@ namespace EZLeveler
                     ActionsForEmptyArgs = new RunDefaultPatcher()
                     {
                         IdentifyingModKey = "LeveledEncounterZones.esp",
-                        TargetRelease = GameRelease.SkyrimSE,
+                        TargetRelease = GameRelease.SkyrimSE
                     }
                 });
         }
