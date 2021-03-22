@@ -11,18 +11,11 @@ namespace EZLeveler
 {
     public class Program
     {
-        public static async Task<int> Main(string[] args)
+        public static Task<int> Main(string[] args)
         {
-            return await SynthesisPipeline.Instance
+            return SynthesisPipeline.Instance.SetTypicalOpen(GameRelease.SkyrimSE, "LeveledEncounterZones.esp")
                 .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .Run(args, new RunPreferences()
-                {
-                    ActionsForEmptyArgs = new RunDefaultPatcher()
-                    {
-                        IdentifyingModKey = "LeveledEncounterZones.esp",
-                        TargetRelease = GameRelease.SkyrimSE
-                    }
-                });
+                .Run(args);
         }
 
         public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
